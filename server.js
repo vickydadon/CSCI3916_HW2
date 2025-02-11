@@ -4,6 +4,11 @@ File: Server.js
 Description: Web API scaffolding for Movie API
  */
 
+require('dotenv').config();
+console.log("UNIQUE_KEY:", process.env.UNIQUE_KEY);
+console.log("SECRET_KEY:", process.env.SECRET_KEY);
+
+
 var express = require('express');
 var http = require('http');
 var bodyParser = require('body-parser');
